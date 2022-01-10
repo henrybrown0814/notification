@@ -49,7 +49,7 @@ class App extends React.Component {
   render() {
     return (
       
-      <div className="flex h-screen w-full  flex-none">
+      <div className="flex h-screen w-1024  flex-none ">
         <div className="w-280  h-screen bg-white hidden lg:block">
                 <div className="w-280 h-74 pl-15">
                     <img className='w-215 h-full' src="./logo-logotype-black-on-light-bck.png" />
@@ -81,8 +81,8 @@ class App extends React.Component {
                 {/* Line */}
                 <div className="border-0.5 ml-46 w-208 border-solid border-[#9fa6ba]"></div>
             </div>
-        <div className="flex flex-col bg-[#f4f7f6]">
-            <header className="w-1440  h-74 bg-white flex justify-between">
+        <div className="flex flex-col bg-[#f4f7f6] w-full">
+            <header className="w-full  h-74 bg-white flex justify-between">
                 <div className="ml-20 mt-17 w-161 h-41 text-30 font-bold font-['Nunito']">
                     Dashboard
                 </div>
@@ -90,14 +90,14 @@ class App extends React.Component {
                     <img src="./icons-bell.svg" />
                 </div>
             </header>
-          <div className="w-full pl-30 pt-48 bg-[#4546]">
+          <div className="w-full pl-30 pt-48 bg-[#f4f7f6]">
               <span className="font-['Nunito'] text-18 text-bold text-black" >Moments created by you</span>
           </div>
           <div className="flex flex-wrap pl-20  sm:flex-row mt-16 space-x-10">
             {this.state.Moments.map(moment =>{return <Moment content={moment}/>})}
             <NewMoment />
           </div>
-          <div className=" w-full h-full pl-30 pt-48 bg-[#4546]">
+          <div className=" w-full h-full pl-30 pt-48 bg-[#f4f7f6]">
               <span class="Moments-you-collabor">
                 Moments you collaborate
               </span>
